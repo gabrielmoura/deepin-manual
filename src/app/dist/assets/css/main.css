@@ -1,0 +1,31 @@
+manual-toc {
+  display: flex;
+  flex-flow: wrap row;
+  background: #fff;
+  padding-bottom: 45px;
+}
+deepin-toolbar {
+  display: block;
+  height: 51px;
+  padding: 0 21px;
+}
+deepin-toolbar > img,
+deepin-toolbar > span {
+  float: left;
+}
+deepin-toolbar > span {
+  color: #fff;
+  margin-left: 14px;
+  line-height: 42px;
+  font-size: 24px;
+}
+deepin-titlebar,
+deepin-toolbar {
+  background: #252627;
+}
+.windowborder {
+  border: 1px solid gray;
+  border-radius: 3px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 944px;
+}

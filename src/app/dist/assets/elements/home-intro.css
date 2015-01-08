@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  width: 210px;
+  margin: 40px 13px 20px;
+}
+img,
+a,
+span {
+  display: block;
+}
+a {
+  overflow: hidden;
+  color: #94989f;
+  text-decoration: none;
+}
+figure {
+  width: 54px;
+  margin: auto;
+}
+a:hover {
+  color: #616161;
+}
+a:hover svg path,
+a:hover svg rect {
+  fill: #616161;
+}
+span {
+  text-align: center;
+}

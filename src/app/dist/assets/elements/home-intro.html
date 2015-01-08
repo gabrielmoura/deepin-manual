@@ -1,0 +1,22 @@
+<link rel="import" href="../lib/polymer/polymer.html">
+<link rel="import" href="../lib/core-ajax/core-ajax.html">
+
+<polymer-element name="home-intro" attributes="img _title href">
+    <template>
+        <core-ajax url="{{ img }}" auto response="{{ svgData }}" handleAs="xml"></core-ajax>
+        <link rel="stylesheet" href="home-intro.css">
+        <a href="{{ href }}" title="{{ title }}">
+            <figure id="svg">{{ svgData | output }}</figure>
+            <span>{{ title }}</span>
+        </a>
+    </template>
+    <script>
+        Polymer({
+            output: function(svg){
+                if( this.$ && this.$.svg && svg ) {
+                    this.$.svg.appendChild(svg.documentElement);
+                }
+            }
+        });
+    </script>
+</polymer-element>

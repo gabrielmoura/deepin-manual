@@ -1,0 +1,17 @@
+<link rel="import" href="lib/polymer/polymer.html">
+<link rel="import" href="assets/lib/core-ajax/core-ajax.html">
+
+<polymer-element name="my-element">
+    <template>
+        <span>I'm <b>my-element</b>. This is my Shadow DOM.</span>
+        <core-ajax url="/dist/test.json" auto response="{{ resp }}"></core-ajax>
+        <textarea value="{{ resp|toJSON }}"></textarea>
+    </template>
+    <script>
+        Polymer({
+            toJSON: function(obj){
+                return JSON.stringify(obj);
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,38 @@
+:host {
+  min-height: 32px;
+}
+.window-controls {
+  text-indent: -999em;
+  display: flex;
+  width: 84px;
+  float: right;
+}
+.window-controls > a {
+  display: block;
+  width: 28px;
+  height: 24px;
+}
+.window-controls .minimize,
+.window-controls .maximize,
+.window-controls .close {
+  background: url('../img/sprite_window.png') no-repeat;
+}
+.window-controls .minimize:hover,
+.window-controls .maximize:hover,
+.window-controls .close:hover {
+  background-position-y: -24px;
+}
+.window-controls .minimize:active,
+.window-controls .maximize:active,
+.window-controls .close:active {
+  background-position-y: -48px;
+}
+.window-controls .minimize {
+  background-position: 0 0;
+}
+.window-controls .maximize {
+  background-position-x: -28px;
+}
+.window-controls .close {
+  background-position-x: -84px;
+}

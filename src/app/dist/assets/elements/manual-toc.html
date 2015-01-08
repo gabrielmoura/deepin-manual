@@ -1,0 +1,27 @@
+<link rel="import" href="../lib/polymer/polymer.html">
+<link rel="import" href="home-intro.html">
+
+<polymer-element name="manual-toc">
+    <template>
+        <template repeat="{{ item, index in data }}">
+            <home-intro img="assets/img/1-0{{ index+1 }}.svg" href="index/{{ item }}" title="{{ item }}"></home-intro>
+        </template>
+    </template>
+    <script>
+        Polymer("manual-toc", {
+            ready: function(){
+                this.data = [
+                   "了解深度音乐",
+                   "使用入门",
+                   "基本操作",
+                   "迷你模式",
+                   "管理本地音乐",
+                   "管理在线音乐",
+                   "常用播放操作",
+                   "播放列表管理",
+                   "获取帮助"
+                ];
+            }
+        });
+    </script>
+</polymer-element>

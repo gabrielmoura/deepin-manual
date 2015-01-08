@@ -1,0 +1,11 @@
+<link rel="import" href="../lib/polymer/polymer.html">
+
+<polymer-element name="deepin-toolbar" extends="core-toolbar" attributes="img _title" noscript>
+    <template>
+        <link rel="stylesheet" href="deepin-toolbar.css">
+        <style>:host{height: 51px;}</style>
+        <shadow></shadow>
+        <img src="{{ img }}" alt="{{ title }}" />
+        <span>{{ title }}</span>
+    </template>
+</polymer-element>
