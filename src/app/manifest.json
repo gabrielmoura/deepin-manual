@@ -1,0 +1,13 @@
+{
+    "name": "User Manual",
+    "version": "0.1",
+    "description": "deepin user manual",
+    "path": "dist/",
+    "icon": "dist/assets/img/logo.png",
+    "width": 966,
+    "height": 576,
+    "visible": true,
+    "transBackground": true,
+    "debug": true,
+    "frameless": true
+}
